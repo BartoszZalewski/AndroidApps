@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Language:"
+            android:layout_weight="1"
+            android:textSize="50dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="englishLanguage"
+                android:id="@+id/button29"
+                android:background="@drawable/englishselected"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="polishLanguage"
+                android:background="@drawable/polish"
+                android:id="@+id/button30"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Players:"
+        android:id="@+id/textView4"
+        android:layout_weight="2"
+        android:textSize="50dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_weight="2"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="40dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/confirm"
+        android:onClick="numberOfPlayersConfirmButton"
+        android:id="@+id/button15"
+        android:layout_weight="2"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wmenu"
+        android:onClick="menu"
+        android:id="@+id/button27"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2" />
+
+</LinearLayout>
